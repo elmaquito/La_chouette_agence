@@ -1068,3 +1068,20 @@ h4 {
         text-align: center;
     }
 }
+
+/* Performance optimizations */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* GPU acceleration for animations */
+.btn, .navbar-toggle {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* Reduce repaints */
+* {
+    box-sizing: border-box;
+}

@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
+    <!-- Preload important resources -->
+    <link rel="preload" href="./css/bootstrap.css" as="style">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="./js/jquery-2.1.0.js" as="script">
+    
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
@@ -21,9 +26,45 @@
 
     <title>La Chouette Agence - Agence web Lyon spécialisée en création de sites internet</title>
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lachouetteagence.com/">
+    <meta property="og:title" content="La Chouette Agence - Agence web Lyon">
+    <meta property="og:description" content="Agence web basée à Lyon spécialisée dans la création de sites web, le web design et le référencement SEO.">
+    <meta property="og:image" content="img/la-chouette-agence.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="La Chouette Agence - Agence web Lyon">
+    <meta property="twitter:description" content="Agence web basée à Lyon spécialisée dans la création de sites web, le web design et le référencement SEO.">
+
     
 <!-- Analytics -->
- 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebDesignAgency",
+  "name": "La Chouette Agence",
+  "description": "Agence web basée à Lyon spécialisée dans la création de sites web, le web design et le référencement SEO",
+  "url": "https://lachouetteagence.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2 place Sathonay",
+    "addressLocality": "Lyon",
+    "postalCode": "69001",
+    "addressCountry": "FR"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+33-X-XX-XX-XX-XX",
+    "contactType": "Customer Service",
+    "email": "contact@lachouetteagence.com"
+  },
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "areaServed": "Lyon",
+  "serviceType": ["Web Design", "SEO", "Web Development"]
+}
+</script>
 <!-- Analytics END -->
     
 </head>
