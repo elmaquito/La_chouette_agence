@@ -1,24 +1,24 @@
 <!doctype html>
-<html lang="Default">
+<html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="keywords" content="contact agence web Lyon, devis site internet, création site web Lyon">
+    <meta name="description" content="Contactez La Chouette Agence à Lyon pour vos projets de création de sites web, web design et référencement. Devis gratuit et conseils personnalisés.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
     
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
-    <title>page2</title>
+	<script src="./js/jquery-2.1.0.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/blocs.js"></script>
+	<script src="./js/jqBootstrapValidation.js" defer></script>
+	<script src="./js/formHandler.js" defer></script>
+    <title>Contact - La Chouette Agence Lyon | Devis gratuit création site web</title>
 
     
 <!-- Analytics -->
@@ -27,15 +27,18 @@
     
 </head>
 <body>
+<!-- Lien d'accessibilité -->
+<a href="#main-content" class="sr-only sr-only-focusable">Aller au contenu principal</a>
+
 <!-- Principal conteneur -->
 <div class="page-container">
     
 <!-- bloc-0 -->
 <div class="bloc bgc-white l-bloc " id="bloc-0">
 	<div class="container bloc-sm">
-		<nav class="navbar row">
+		<nav class="navbar row" role="navigation" aria-label="Navigation principale">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="atlanta web design logo" height="40" /></a>
+				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="La Chouette Agence - Agence web Lyon" height="40" /></a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
@@ -46,9 +49,7 @@
 						<a href="index.html">Accueil</a>
 					</li>
 					<li>
-					</li>
-					<li>
-						<a href="page2.html">page2 &gt;</a>
+						<a href="page2.html">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -76,35 +77,37 @@
 <!-- bloc-6 END -->
 
 <!-- bloc-7 -->
+<main id="main-content">
 <div class="bloc bgc-white l-bloc" id="bloc-7">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1" novalidate success-msg="Votre message a été envoyé avec succès." fail-msg="Désolé, il semble que notre serveur de messagerie ne réponde pas. Veuillez réessayer plus tard." role="form">
 					<div class="form-group">
-						<label>
-							Nom
+						<label for="name">
+							Nom *
 						</label>
-						<input id="name" class="form-control" required />
+						<input id="name" class="form-control" required aria-required="true" />
 					</div>
 					<div class="form-group">
-						<label>
-							Adresse email
+						<label for="email">
+							Adresse email *
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						<input id="email" class="form-control" type="email" required aria-required="true" />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="input_504">
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						<input class="form-control" type="text" id="input_504" />
 					</div>
 					<div class="form-group">
-						<label>
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						<label for="message">
+							Brief de votre projet (Ajoutez autant de détails que nécessaire) *
+						</label>
+						<textarea id="message" class="form-control" rows="4" cols="50" required aria-required="true"></textarea>
 					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" aria-label="Envoyer le formulaire de contact">
 						Envoyer
 					</button>
 				</form>
@@ -122,9 +125,10 @@
 <!-- ScrollToTop Button -->
 <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
 <!-- ScrollToTop Button END-->
-
+</main>
 
 <!-- Footer - bloc-8 -->
+<footer>
 <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
@@ -135,22 +139,22 @@
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="index.html" aria-label="Suivez-nous sur Twitter"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="index.html" aria-label="Suivez-nous sur Facebook"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="index.html" aria-label="Suivez-nous sur Dribbble"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="index.html" aria-label="Suivez-nous sur Instagram"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
@@ -159,6 +163,7 @@
 	</div>
 </div>
 <!-- Footer - bloc-8 END -->
+</footer>
 
 </div>
 <!-- Principal conteneur END -->
